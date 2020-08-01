@@ -1,0 +1,18 @@
+@mixin clearfix{
+    &::after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+}
+/*
+@mixin col-text-arrangement {
+        background-color: $color-col-bg-color;
+        float:left;
+        padding: $col-margin-t-b;                   ////this is done by using src see grid scss
+        font-size: $col-text-size;
+        text-align:center;
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+}*/
