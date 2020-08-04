@@ -151,6 +151,25 @@ body {
 .u-gradient-3 {
   background-image: linear-gradient(to bottom, rgba(110, 241, 241, 0.8), rgba(12, 0, 185, 0.8)); }
 
+.highlights {
+  color: transparent;
+  display: inline-block;
+  background-image: linear-gradient(to right, hotpink, purple);
+  -webkit-background-clip: text;
+  margin: 0 auto;
+  text-align: center; }
+  .highlights__details {
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .highlights__link:link, .highlights__link:visited {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 7rem;
+    text-decoration: none;
+    color: transparent;
+    display: block; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -202,6 +221,58 @@ body {
     animation-name: dropDown;
     animation-timing-function: ease-out;
     animation-duration: 2s; }
+
+.footer {
+  height: 35rem;
+  background-image: linear-gradient(to bottom, #1a1818, #e44141); }
+  .footer_logo {
+    margin: 0 auto;
+    width: 14rem;
+    height: 16rem;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(to right, rgba(248, 116, 116, 0.925), #bd0000);
+    -webkit-background-clip: text; }
+    .footer_logo__icon {
+      font-size: 10rem;
+      display: block; }
+    .footer_logo__Text {
+      margin-top: -7rem;
+      font-size: 3rem;
+      display: block; }
+  .footer__navigation {
+    border-top: solid 3px #999;
+    display: inline-block; }
+  .footer__list {
+    padding-top: 2rem;
+    list-style: none;
+    height: 5rem; }
+  .footer__items {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0; }
+    .footer__items:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #d8d4d4;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s; }
+  .footer__link:hover, .footer__link:active {
+    color: cyan;
+    box-shadow: 0 1rem 2rem #333333;
+    transform: rotate(5deg) scale(1.2); }
+  .footer__copyright {
+    border-top: solid 3px #999;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 80%; }
+    .footer__copyright__content {
+      float: right;
+      padding-top: 2rem; }
 
 .card {
   perspective: 150rem;
