@@ -154,7 +154,7 @@ body {
 .highlights {
   color: transparent;
   display: inline-block;
-  background-image: linear-gradient(to right, hotpink, purple);
+  background-image: linear-gradient(to right, hotpink, #06ffea);
   -webkit-background-clip: text;
   margin: 0 auto;
   text-align: center; }
