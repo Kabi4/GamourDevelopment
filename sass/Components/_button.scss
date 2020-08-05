@@ -1,7 +1,6 @@
 .btn{
-	&:link,&:visited{
+	&,&:link,&:visited{
 		margin-left:1rem;
-		background-color: $color-text-white;
 		display: inline-block;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -9,14 +8,14 @@
 		padding: 1.5rem 4rem;
 		border-radius: 10rem;
 		position: relative;
-	
+		cursor: pointer;
 		transition: all 0.2s;
 	
 		box-shadow: 0rem 1rem 2rem $color-primary-dark;
 	}
-	&:hover{
+	&:hover,&:focus{
 		background-color: $color-bckgd-second;
-
+		outline: none;
 		transform: translateY(-1rem);
 
 		box-shadow: 0rem 1rem 2rem $color-blue;
@@ -25,9 +24,9 @@
 			opacity: 0;
 		}
 	}
-	&:active{
+	&:active,&:focus{
 		background-color: $color-text-white;
-
+		outline: none;
 		transform: translateY(-0.4rem);
 		box-shadow: 0rem 0.5rem 1rem $color-text-white;
 	}
@@ -52,11 +51,25 @@
 		transition: all 0.4s;
 	}
 	&--white{
+		background-color: $color-text-white;
 		&--yellow{
 			color:$color-yellow;
 		}
 		&--red{
 			color:$color-bckgd-first;
+		}
+		&--green{
+			color:$color-green;
+		}
+		&--blue{
+			color:$color-blue-1;
+		}
+		&--orange{
+			color:$color-orange;
+		}
+		&--discover{
+			background-color: rgb(39, 137, 230);
+			color:white;
 		}
 		&::after{
 			background-color:$color-text-white;

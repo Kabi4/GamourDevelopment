@@ -1,0 +1,64 @@
+.story{
+    width: 75%; 
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem $color-story-box-shadow;
+    background-color: rgba($card-front-bg,0.6);
+    border-radius: 3px;
+    font-size: $default-fontsize;
+    padding: 6rem;
+    padding-left: 9rem;
+    transform: skewX(-12deg);
+    //text-align: center;
+    & > *{
+       transform: skewX(12deg);
+    }
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+    }
+    &__img{
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        transform: scale(1.2);
+        transition: all 0.5s;
+    }
+    &__text{
+        transform: skewX(12deg);
+        p{
+            color: $pricing-color-h4-text;
+        }
+        &-1{
+            color: cyan;
+        }
+    }
+    &__caption{
+        color: white;
+        position: absolute;
+        font-size: 1.7rem;
+        width: 100%;
+        top: 50%;
+        font-weight: 400;
+        left: 50%;
+        backface-visibility: hidden;
+        transform: translate(-30%,90%);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    &:hover &__img{
+        transform: scale(1);
+        filter: blur(3px) brightness(80%);
+
+    }
+    &:hover &__caption{
+        transform: translate(-30%,-50%);
+        opacity: 1;
+    }
+}

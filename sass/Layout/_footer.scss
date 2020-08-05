@@ -1,0 +1,66 @@
+.footer{
+    height: 35rem;
+    background-image: linear-gradient(to bottom,$color-footer-bg-primary,$color-footer-bg-secondary);
+    &_logo{
+        margin: 0 auto;
+        width: 17rem;
+        height: 16rem;
+        text-align: center;
+        color:transparent;
+        background-image: linear-gradient(to right,$color-primary-light-red,$color-primary-dark-red);
+        -webkit-background-clip: text;
+        &__icon{
+            font-size: 10rem;
+            display: block;
+        }
+        &__Text{
+            margin-top: -7rem;
+            font-size: 3rem;
+            display: block;
+        }
+    }
+    &__navigation{
+        border-top: solid 3px $color-border-nav;
+        display: inline-block;
+    }
+    &__list{
+        padding-top: 2rem;
+        list-style: none;
+        height: 5rem;
+    }
+    &__items{
+        font-size: 1.2rem;
+        font-weight: 700;
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+        margin-bottom: 0;
+    }
+    &__link{
+        &:link,&:visited{
+            text-decoration: none;
+            color: rgb(216, 212, 212);
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        &:hover,&:active{
+            color: cyan;
+            box-shadow: 0 1rem 2rem rgba(#333,1);
+            transform: rotate(5deg) scale(1.2);
+        } 
+    }
+    &__copyright{
+        border-top: solid 3px $color-border-nav;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        width: 80%;
+        &__content{
+            float: right;
+            padding-top: 2rem;
+        }
+    }
+
+}

@@ -1,7 +1,7 @@
 .row{
     max-width: $grid-width;
     margin: 0 auto;
-    background-color: $color-black-light-1;
+    //background-color: $color-black-light-1;
     color: $color-grid-text-color;
     box-sizing: border-box;
     &:not(:last-child){

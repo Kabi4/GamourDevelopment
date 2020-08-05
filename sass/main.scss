@@ -9,8 +9,16 @@
 
 @import "Layout/grid";
 @import "Layout/header";
+@import "Layout/footer";
+@import"Layout/_navigation";
+@import"Layout/popup";
 
+@import "Components/card";
 @import "Components/compositon";
 @import "Components/button";
+@import "Components/feature-box";
+@import "Components/story";
+@import "Components/bg-vedio";
+@import "Components/form";
 
 @import "pages/home";

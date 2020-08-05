@@ -15,3 +15,52 @@
         //clip-path: polygon(0 20%, 20% 20%,0 30%);
     }*/
 }
+.section-features{
+    background-image:linear-gradient(to right bottom,rgba($color-bckgd-first,0.8),rgba($color-bckgd-second,0.8)) , url(../img/feature_wall.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 20rem 0;
+    margin-top: -10rem;
+    transform: skewY(-7deg);
+
+    & > *{
+        transform: skewY(7deg);
+    }
+}
+
+.section-courses{
+    background-color: $color-black-light-1;
+    padding: 20rem 0;
+    margin-top: -10rem;
+    text-align: center;
+}
+
+.section-reviews{
+    margin-top: -10rem;;
+    padding: 10rem 0;
+    //background-color: $color-black-light-1;
+    position: relative;
+}
+
+.section-book{
+    padding: 10rem 0;
+    height: 100%;
+    background-image:linear-gradient(to right bottom,
+                                    rgba($color-bckgd-first,0.8),
+                                    rgba($color-bckgd-second,0.8));
+}
+.book{
+    background-image:linear-gradient(105deg,
+                                    rgba(white,0.8) 0%,
+                                    rgba(white,0.8) 50%,
+                                    transparent 50%),
+                                    url(../img/form.jpg);
+    background-size: cover;
+    height: 60rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem $color-form-box-shadow;
+    &__form{
+        width: 50%;
+        padding: 6rem;
+    }
+}
