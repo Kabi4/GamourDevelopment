@@ -21,16 +21,16 @@
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>01</span>About Gamours</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>02</span>Discription</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>03</span>Buy Courses</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>04</span>User Reviews</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>05</span>Sign Up</a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About Gamours</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>Description</a></li>
+                    <li class="navigation__item"><a href="#section-courses" class="navigation__link"><span>03</span>Buy Courses</a></li>
+                    <li class="navigation__item"><a href="#section-reviews" class="navigation__link"><span>04</span>User Reviews</a></li>
+                    <li class="navigation__item"><a href="#section-book" class="navigation__link"><span>05</span>Sign Up</a></li>
                 </ul>
             </nav>
         </div>
 
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__logobox">
             <img src="img/logo.png" alt="Gaming_logo" class="header__logo">
             </div>
@@ -39,7 +39,7 @@
                     <span class="heading-primary--main">D3COD3RS</span>
                     <span class="heading-primary--sub">is where we code games</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--white--yellow btn-animated">Discover Courses</a>
+                <a href="#section-courses" class="btn btn--white btn--white--yellow btn-animated">Discover Courses</a>
                 <a href="#" class="btn btn--white btn--white--red btn-animated">Discover Projects</a>
             </div>
         </header>
@@ -109,7 +109,7 @@
         </section>
     -->
         <main>
-            <section class="section-about">
+            <section class="section-about" id="section-about">
                 <div class="u-center-text">
                     <div class="u-margin-bottom-big">
                         <h2 class="heading-secondary">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-features">
+            <section class="section-features" id="section-features">
                 <div class="row">
                     <div class="col-1-4">
                         <div class="feature-box">
@@ -175,7 +175,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-courses">
+            <section class="section-courses" id="section-courses">
                 <div class="u-center-text">
                     <div class="u-margin-bottom-big">
                         <h2 class="heading-secondary">
@@ -207,7 +207,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$97</p>
-                                        <a href="#" class="btn btn--white btn--white--orange">Buy Now!</a>
+                                        <a href="#popup" class="btn btn--white btn--white--orange">Buy Now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$157</p>
-                                        <a href="#" class="btn btn--white btn--white--green">Buy Now!</a>
+                                        <a href="#popup" class="btn btn--white btn--white--green">Buy Now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$256</p>
-                                        <a href="#" class="btn btn--white btn--white--blue">Buy Now!</a>
+                                        <a href="#popup" class="btn btn--white btn--white--blue">Buy Now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +276,7 @@
                     <a href="#" class="btn btn-white btn--white--discover">Discover Other Courses</a>
                 </div>
             </section>
-            <section class="section-reviews">
+            <section class="section-reviews" id="section-reviews">
                 <div class="bg-vedio">
                     <video class="bg-vedio__content" autoplay muted loop>
                         <source src="img/D3COD3.mp4" type="video/mp4">
@@ -319,7 +319,7 @@
                     <a href="#" class="btn-text">See All Reviews &rarr;</a>
                 </div>
             </section>
-            <section class="section-book">
+            <section class="section-book" id="section-book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -389,5 +389,26 @@
                 </div>
             </div>
         </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <a href="#section-courses" class="popup__close">&times;</a>
+                <div class="popup__left">
+                    <img src="img/Popup_1.jpg" alt="Tour Photo" class="popup__img u-margin-bottom-medium">
+                    <img src="img/Popup_2.jpg" alt="Tour Photo" class="popup__img u-margin-bottom-medium">
+                </div>
+                <div class="popup__right">
+                    <div class="u-center-text">
+                        <div class="u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                Buy Course Now! 
+                            </h2>
+                        </div>
+                    </div>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important :&ndash; &nbsp;Please Read Terms And Condition Before!</h3>
+                    <p class="popup__text u-margin-bottom-small">Donec molestie quam quis volutpat ultricies. Sed nec erat sed ante fringilla hendrerit. Sed enim magna, hendrerit quis finibus quis, tristique sed dui. Aenean ac lacinia sapien. Aliquam eget malesuada tortor. Pellentesque luctus tortor risus, sed blandit ante cursus ut. Aenean aliquet arcu ac sem gravida, eu lobortis velit faucibus. In hac habitasse platea dictumst. Etiam luctus pulvinar congue. Nulla in orci eleifend, aliquam elit sit amet, aliquam ligula. Nam sed velit gravida, varius dui vel, posuere erat. Nunc interdum accumsan ultrices. Nunc ante purus, pretium eu semper hendrerit, ultricies id dui. Nam lectus massa, tristique sed vestibulum id, aliquam at felis. Vivamus commodo nunc at mollis bibendum.</p>
+                    <a href="#" class="btn btn--white btn--white--blue">Buy Now!</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
