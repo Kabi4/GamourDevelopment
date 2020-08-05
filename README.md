@@ -13,4 +13,4 @@ Also in nav replace the checkbox with a anchor and in anchor put this id="naviga
 Then in Nav CSS replae all the :checked class with this.
     &:target
 
-for refrence go to _turn_nav file
+for refrence go to my [Gamours-Completed-](https://kabi4.github.io/Gamours-Completed-/)
