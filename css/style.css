@@ -360,7 +360,7 @@ body {
     width: 3rem;
     height: 2px;
     background-color: yellow;
-    transition: all 0.2s;
+    transition: all .2s;
     backface-visibility: none; }
   .navigation__icon::after {
     content: "";
@@ -383,12 +383,14 @@ body {
   background-color: transparent; }
 
 .navigation__checkbox:checked ~ .navigation__label .navigation__icon::after {
-  top: 0;
-  transform: rotate(145deg); }
+  top: -0.8rem;
+  transform: rotate(-45deg);
+  transform-origin: right; }
 
 .navigation__checkbox:checked ~ .navigation__label .navigation__icon::before {
-  top: 0;
-  transform: rotate(45deg); }
+  top: 0.8rem;
+  transform: rotate(45deg);
+  transform-origin: right; }
 
 .card {
   perspective: 150rem;
