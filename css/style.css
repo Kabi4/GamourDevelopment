@@ -214,7 +214,7 @@ body {
     height: 16rem;
     text-align: center;
     color: transparent;
-    background-image: linear-gradient(to right, rgba(248, 116, 116, 0.925), #bd0000);
+    background-image: linear-gradient(to right, hotpink, #06ffea);;
     -webkit-background-clip: text
 	}
   .header__text-box {
