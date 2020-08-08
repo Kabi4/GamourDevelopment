@@ -209,7 +209,14 @@ body {
     position: absolute;
     top: 2rem;
     left: 3rem;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    width: 17rem;
+    height: 16rem;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(to right, rgba(248, 116, 116, 0.925), #bd0000);
+    -webkit-background-clip: text
+	}
   .header__text-box {
     position: absolute;
     top: 50%;
